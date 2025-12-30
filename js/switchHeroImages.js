@@ -1,0 +1,20 @@
+const hero = document.querySelector(".hero");
+
+    const images = [
+        "imgs/Hero-1.webp",
+        "imgs/Hero-2.webp",
+        "imgs/Hero-3.webp"
+    ];
+
+    let index = 0;
+
+    function changeHeroBg() {
+        hero.style.backgroundImage = `url(${images[index]})`;
+        index = (index + 1) % images.length;
+    }
+
+    // initial image
+    changeHeroBg();
+
+    // change every 5 seconds
+    setInterval(changeHeroBg, 5000);
