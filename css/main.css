@@ -266,7 +266,7 @@ body {
 .custom-toggler span {
     height: 3px;
     width: 100%;
-    background: var(--soft-white);
+    background: var(--accent-orange);
     border-radius: 2px;
     transition: 0.3s ease;
 }
@@ -274,28 +274,21 @@ body {
 /* OFFCANVAS */
 .mobile-menu {
     width: 280px;
-    background: var(--dark-green);
-}
-
-.mobile-menu .offcanvas-header {
-    background-color: var(--soft-green);
-    color: var(--soft-white);
-    height: 70px;
-}
-
-.mobile-menu .offcanvas-title {
-    font-family: var(--font-display);
-    color: var(--soft-white);
+    background: var(--warm-sand);
 }
 
 .mobile-menu .nav-link {
     font-size: .9rem;
-    color: var(--soft-white);
+    color: var(--primary-black);
     width: fit-content;
 }
 
 .mobile-menu .nav-link:hover {
-    color: var(--soft-white);
+    color: var(--accent-orange);
+}
+
+.mobile-menu .nav-link.nav-link.activated {
+    color: var(--primary-white);
 }
 
 @media (max-width: 991px) {
