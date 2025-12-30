@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Dineo - Best Restaurant In Morocco
+    </title>
+
+    <!-- Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg custom-navbar shadow fixed-top">
+            <div class="container-fluid">
+
+                <!-- BRAND -->
+                <div class="navbar-brand d-flex justify-content-center align-items-center">
+                    <div class="brand-icon d-flex justify-content-center align-items-center me-2">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <p class="text-uppercase">Dineo</p>
+                </div>
+
+                <!-- HAMBURGER / TOGGLER (Mobile) -->
+                <button class="navbar-toggler custom-toggler" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <!-- DESKTOP LINKS -->
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav align-items-center gap-2">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#contact">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase activated" href="#bookTable">Book A Table</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 🔵 OFFCANVAS MENU (Mobile + Tablet) -->
+        <div class="offcanvas offcanvas-start mobile-menu" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <h3>talibi.mohamed</h3>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-start gap-3">
+                    <li><a class="nav-link activated" href="" data-bs-dismiss="offcanvas">Home</a></li>
+                    <li><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a></li>
+                    <li><a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a></li>
+                    <li><a class="nav-link" href="#menu" data-bs-dismiss="offcanvas">Menu</a></li>
+                    <li><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Reservation</a></li>
+                    <li><a class="nav-link activated" href="#bookTable" data-bs-dismiss="offcanvas">Book A Table</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+        crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: "ease-in-out",
+        });
+    </script>
+    <!-- Loader -->
+    <script src="js/loader.js"></script>
+    <!-- Nav -->
+    <script src="js/nav.js"></script>
+</body>
+</html>

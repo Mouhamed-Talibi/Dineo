@@ -1,0 +1,305 @@
+/* Define Fonts */
+
+    /* -------- Didact Gothic (Body Text) -------- */
+    @font-face {
+        font-family: "Didact Gothic";
+        src: url("../fonts/DidactGothic/DidactGothic-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
+    /* -------- Libertinus Sans (UI / Buttons) -------- */
+    @font-face {
+        font-family: "Libertinus Sans";
+        src: url("../fonts/LibertinusSans/LibertinusSans-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Libertinus Sans";
+        src: url("../fonts/LibertinusSans/LibertinusSans-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Libertinus Sans";
+        src: url("../fonts/LibertinusSans/LibertinusSans-Italic.ttf") format("truetype");
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+    }
+
+
+    /* -------- Playfair (Headings / Hero) -------- */
+    @font-face {
+        font-family: "Playfair";
+        src: url("../fonts/Playfair/static/Playfair_144pt-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Playfair";
+        src: url("../fonts/Playfair/static/Playfair_144pt-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Playfair";
+        src: url("../fonts/Playfair/static/Playfair_144pt-Italic.ttf") format("truetype");
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+    }
+
+
+/* root variables */
+:root {
+    /* Colors */
+    --primary-orange: #FF6B00; 
+    --accent-orange: #D35400;
+
+    --primary-black: #212121;
+    --primary-green: #06923E;
+    --primary-white: #FFFFFF;
+    --warm-sand: #EFD9B4;
+
+    /* Fonts */
+    --font-body: "Didact Gothic", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-ui: "Libertinus Sans", system-ui, sans-serif;
+    --font-heading: "Playfair", Georgia, serif;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--primary-white);
+    font-family: var(--font-body);
+}
+
+/* Loader */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-white); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.4s ease;
+    /* prevent any potential overflow */
+    overflow: hidden;
+    max-width: 100vw;
+}
+
+.loader {
+    animation: rotate 3s infinite;
+    height: 50px;
+    width: 50px;
+}
+
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.loader:before {
+    animation: ball1 1s infinite;
+    background-color: var(--primary-black);
+    box-shadow: 30px 0 0 var(--primary-orange);
+    margin-bottom: 10px;
+}
+
+.loader:after {
+    animation: ball2 1s infinite;
+    background-color: var(--primary-orange);
+    box-shadow: 30px 0 0 var(--primary-black);
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg) scale(0.8) }
+    50% { transform: rotate(360deg) scale(1.2) }
+    100% { transform: rotate(720deg) scale(0.8) }
+}
+
+@keyframes ball1 {
+    0% {
+        box-shadow: 30px 0 0 var(--primary-orange);
+    }
+    50% {
+        box-shadow: 0 0 0 var(--primary-orange);
+        margin-bottom: 0;
+        transform: translate(15px, 15px);
+    }
+    100% {
+        box-shadow: 30px 0 0 var(--primary-orange);
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes ball2 {
+    0% {
+        box-shadow: 30px 0 0 var(--primary-black);
+    }
+    50% {
+        box-shadow: 0 0 0 var(--warm-sand);
+        margin-top: -20px;
+        transform: translate(15px, 15px);
+    }
+    100% {
+        box-shadow: 30px 0 0 var(--primary-orange);
+        margin-top: 0;
+    }
+}
+
+/* Hide content until loader finishes */
+.content {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/* Navbar ======================================================================================================================== */
+.custom-navbar {
+    background: var(--primary-white);
+    backdrop-filter: 1.5;
+    padding: 11px 0;
+}
+
+.brand-icon {
+    height: 40px;
+    width: 40px;
+    background-color: var(--primary-orange);
+    border-radius: 7px;
+    color: var(--primary-white);
+}
+
+.brand-icon i {
+    transform: rotate(20px);
+}
+
+.navbar-brand p {
+    margin: 0;
+    color: var(--primary-black);
+    font-weight: 800;
+}
+
+.nav-link {
+    color: var(--primary-black);
+    opacity: .8;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.nav-link:not(.activated) {
+    padding: 6px 15px;
+}
+
+.nav-link:hover:not(.activated) {
+    color: var(--primary-orange);
+    opacity: 1;
+}
+
+.nav-link.activated {
+    opacity: 1;
+    background-color: var(--accent-orange);
+    color: var(--primary-white);
+    padding: 8px 25px !important;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all .4s ease;
+}
+
+.nav-link.activated:hover, 
+.nav-link.activated:focus {
+    background-color: var(--primary-orange);
+} 
+
+/* HAMBURGER MENU */
+.custom-toggler {
+    border: none;
+    background: transparent;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.custom-toggler:focus,
+.custom-toggler:active,
+.custom-toggler:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.custom-toggler span {
+    height: 3px;
+    width: 100%;
+    background: var(--soft-white);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+/* OFFCANVAS */
+.mobile-menu {
+    width: 280px;
+    background: var(--dark-green);
+}
+
+.mobile-menu .offcanvas-header {
+    background-color: var(--soft-green);
+    color: var(--soft-white);
+    height: 70px;
+}
+
+.mobile-menu .offcanvas-title {
+    font-family: var(--font-display);
+    color: var(--soft-white);
+}
+
+.mobile-menu .nav-link {
+    font-size: .9rem;
+    color: var(--soft-white);
+    width: fit-content;
+}
+
+.mobile-menu .nav-link:hover {
+    color: var(--soft-white);
+}
+
+@media (max-width: 991px) {
+    .navbar-brand .logo {
+        height: 30px;
+    }
+}
