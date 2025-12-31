@@ -474,12 +474,17 @@ body {
     .about-images .images-grid {
         height: 310px;
     }
+
+    .about-text {
+        margin-top: 30px;
+    }
 }
 
 .about-text span {
     font-family: var(--font-heading);
-    color: var(--accent-orange);
+    color: var(--primary-orange);
     font-size: 23px;
+    letter-spacing: 3px;
 }
 
 .about-text h1 {
@@ -489,8 +494,7 @@ body {
 }
 
 .about-text h1 .brand {
-    color: var(--primary-orange);
-    text-decoration: underline;
+    color: var(--accent-orange);
 }
 
 .about-text p {
@@ -501,4 +505,78 @@ body {
 
 .about-text .about-specials h3 {
     font-weight: 900;
+    font-family: var(--font-ui);
+}
+
+/* Main title ===================================================================================================================== */
+.main-title span {
+    font-family: var(--font-heading);
+    color: var(--primary-orange);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.main-title h1 {
+    font-size: clamp(30px, 45px, 60px);
+    font-family: var(--font-heading);
+    font-weight: 800;
+}
+
+.main-title p {
+    opacity: .6;
+    font-weight: 600;
+}
+
+/* Services ======================================================================================================================== */
+.service {
+    border: 1px solid transparent;
+    border-radius:16px;
+    padding: 20px;
+    transition: border-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.service .service-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 6px;
+    background-color: #d354002c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.service .service-icon i {
+    font-size: 25px;
+    color: var(--accent-orange);
+    transition: color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.service h3 {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.service p {
+    opacity: 0.7;
+    font-weight: bold;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.service:hover,
+.service:focus {
+    border-color: var(--accent-orange);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.service:hover .service-icon,
+.service:focus .service-icon {
+    background-color: var(--accent-orange);
+}
+
+.service:hover .service-icon i,
+.service:focus .service-icon i {
+    color: var(--warm-sand);
 }
