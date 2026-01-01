@@ -3,7 +3,6 @@ const hero = document.querySelector(".hero");
     const images = [
         "imgs/Hero-1.webp",
         "imgs/Hero-2.webp",
-        "imgs/Hero-4.webp",
     ];
 
     let index = 0;
