@@ -23,6 +23,11 @@
 
     <!-- Css Link -->
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="fonts/Playfair/static/Playfair_144pt-Bold.ttf" as="font" type="font/woff2" crossorigin>
+
+    <noscript><link rel="stylesheet" href="css/main.css"></noscript>
 </head>
 <body>
     <!-- Loader -->
@@ -133,10 +138,12 @@
                             <div class="images-grid" data-aos="fade-down">
                                 <img src="imgs/chef.webp" 
                                     alt="Professional chef preparing gourmet dishes at Dineo restaurant in Morocco" 
-                                    class="img-fluid img-1">
+                                    class="img-fluid img-1"
+                                    loading="lazy">
                                 <img src="imgs/Dineo1.webp" 
                                     alt="Elegant fine dining atmosphere at Dineo restaurant" 
-                                    class="img-fluid shadow img-2">
+                                    class="img-fluid shadow img-2"
+                                    loading="lazy">
                             </div>
                             <div class="text-overlay position-absolute shadow" data-aos="fade-up">
                                 <h3>10+</h3>
@@ -371,7 +378,7 @@
                         <div class="col-md-6 col-lg-5">
                             <div class="why-us-image position-relative">
                                 <div class="image">
-                                    <img src="imgs/food.webp" alt="" class="img-fluid rounded-4">
+                                    <img src="imgs/food.webp" alt="" class="img-fluid rounded-4" loading="lazy">
                                 </div>
                                 <div class="customer-testimonial position-absolute" data-aos="fade-down">
                                     <div class="profile">
@@ -425,7 +432,8 @@
                         <div class="gallery-item large" data-category="starters" data-aos="fade-up">
                             <img src="imgs/starters/starter-3.webp" 
                                 alt="Italian starter with fresh herbs and olive oil"
-                                loading="lazy">
+                                loading="lazy"
+                                decoding="async">
                             <div class="gallery-overlay">
                                 <h3>Italian Gourmet Starter</h3>
                                 <p>A refined Italian appetizer made with fresh herbs and premium ingredients.</p>
@@ -436,6 +444,7 @@
                         <div class="gallery-item" data-category="main-course" data-aos="fade-down">
                             <img src="imgs/main-courses/main-course-1.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Healthy main course bowl with fresh vegetables">
                             <div class="gallery-overlay">
                                 <h3>Healthy Signature Bowl</h3>
@@ -446,6 +455,7 @@
                         <div class="gallery-item" data-category="main-course" data-aos="fade-up">
                             <img src="imgs/main-courses/main-course-3.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Grilled main course served with sauce">
                             <div class="gallery-overlay">
                                 <h3>Chef’s Grilled Special</h3>
@@ -456,6 +466,7 @@
                         <div class="gallery-item" data-category="main-course" data-aos="fade-down">
                             <img src="imgs/main-courses/main-course-2.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Classic main course served hot and fresh">
                             <div class="gallery-overlay">
                                 <h3>Classic Main Course</h3>
@@ -467,6 +478,7 @@
                         <div class="gallery-item" data-category="starters" data-aos="fade-up">
                             <img src="imgs/starters/starter-2.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Fresh starter plate with seasonal ingredients">
                             <div class="gallery-overlay">
                                 <h3>Fresh Seasonal Starter</h3>
@@ -477,6 +489,7 @@
                         <div class="gallery-item" data-category="starters" data-aos="fade-down">
                             <img src="imgs/starters/starter-1.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Restaurant-style starter dish beautifully plated">
                             <div class="gallery-overlay">
                                 <h3>Restaurant Style Appetizer</h3>
@@ -487,6 +500,7 @@
                         <div class="gallery-item" data-category="main-course" data-aos="fade-up">
                             <img src="imgs/main-courses/main-course-4.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Premium main course with rich sauce">
                             <div class="gallery-overlay">
                                 <h3>Premium Main Dish</h3>
@@ -503,6 +517,7 @@
                         <div class="gallery-item" data-category="desserts" data-aos="fade-down">
                             <img src="imgs/desserts/Chocolate Lava Cake.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Chocolate lava cake with melted chocolate center">
                             <div class="gallery-overlay">
                                 <h3>Chocolate Lava Cake</h3>
@@ -513,6 +528,7 @@
                         <div class="gallery-item" data-category="desserts" data-aos="fade-up">
                             <img src="imgs/desserts/straweberry-cheesecake.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Strawberry cheesecake topped with fresh strawberries">
                             <div class="gallery-overlay">
                                 <h3>Strawberry Cheesecake</h3>
@@ -524,6 +540,7 @@
                         <div class="gallery-item large" data-category="drinks" data-aos="fade-down">
                             <img src="imgs/drinks/Iced Caramel Latte.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Iced caramel latte served cold">
                             <div class="gallery-overlay">
                                 <h3>Iced Caramel Latte</h3>
@@ -534,6 +551,7 @@
                         <div class="gallery-item" data-category="desserts" data-aos="fade-up">
                             <img src="imgs/desserts/Vanilla Crème Brûlée.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Vanilla crème brûlée with caramelized sugar top">
                             <div class="gallery-overlay">
                                 <h3>Vanilla Crème Brûlée</h3>
@@ -545,6 +563,7 @@
                         <div class="gallery-item" data-category="drinks" data-aos="fade-down">
                             <img src="imgs/drinks/Mojito Mocktail.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Refreshing mojito mocktail with mint and lime">
                             <div class="gallery-overlay">
                                 <h3>Mojito Mocktail</h3>
@@ -555,6 +574,7 @@
                         <div class="gallery-item" data-category="drinks" data-aos="fade-up">
                             <img src="imgs/drinks/Classic Cappuccino.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Classic cappuccino with milk foam">
                             <div class="gallery-overlay">
                                 <h3>Classic Cappuccino</h3>
@@ -565,6 +585,7 @@
                         <div class="gallery-item" data-category="drinks" data-aos="fade-down">
                             <img src="imgs/drinks/Fresh Lemonade.webp" 
                                 loading="lazy"
+                                decoding="async"
                                 alt="Fresh lemonade served cold with lemon slices">
                             <div class="gallery-overlay">
                                 <h3>Fresh Lemonade</h3>
