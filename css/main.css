@@ -1,63 +1,43 @@
 /* Define Fonts */
 
-    /* -------- Didact Gothic (Body Text) -------- */
     @font-face {
         font-family: "Didact Gothic";
-        src: url("../fonts/DidactGothic/DidactGothic-Regular.ttf") format("truetype");
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-    }
-
-
-    /* -------- Libertinus Sans (UI / Buttons) -------- */
-    @font-face {
-        font-family: "Libertinus Sans";
-        src: url("../fonts/LibertinusSans/LibertinusSans-Regular.ttf") format("truetype");
+        src: url("../fonts/DidactGothic-Regular.woff2") format("woff2");
         font-weight: 400;
         font-style: normal;
         font-display: swap;
     }
 
     @font-face {
-        font-family: "Libertinus Sans";
-        src: url("../fonts/LibertinusSans/LibertinusSans-Bold.ttf") format("truetype");
+        font-family: "Playfair";
+        src: url("../fonts/Playfair_144pt-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Playfair";
+        src: url("../fonts/Playfair_144pt-Bold.woff2") format("woff2");
         font-weight: 700;
         font-style: normal;
         font-display: swap;
     }
 
+    /* Non-critical UI font */
     @font-face {
         font-family: "Libertinus Sans";
-        src: url("../fonts/LibertinusSans/LibertinusSans-Italic.ttf") format("truetype");
-        font-weight: 400;
-        font-style: italic;
-        font-display: swap;
-    }
-
-
-    /* -------- Playfair (Headings / Hero) -------- */
-    @font-face {
-        font-family: "Playfair";
-        src: url("../fonts/Playfair/static/Playfair_144pt-Regular.ttf") format("truetype");
+        src: url("../fonts/LibertinusSans-Regular.woff2") format("woff2");
         font-weight: 400;
         font-style: normal;
         font-display: swap;
     }
 
     @font-face {
-        font-family: "Playfair";
-        src: url("../fonts/Playfair/static/Playfair_144pt-Bold.ttf") format("truetype");
+        font-family: "Libertinus Sans";
+        src: url("../fonts/LibertinusSans-Bold.woff2") format("woff2");
         font-weight: 700;
         font-style: normal;
-        font-display: swap;
-    }
-
-    @font-face {
-        font-family: "Playfair";
-        src: url("../fonts/Playfair/static/Playfair_144pt-Italic.ttf") format("truetype");
-        font-weight: 400;
-        font-style: italic;
         font-display: swap;
     }
 
