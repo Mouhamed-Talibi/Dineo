@@ -621,6 +621,148 @@
         </section>
         <!-- /end Gallery -->
 
+        <!-- Book Table -->
+        <section class="book-table py-5 pb-5" id="bookTable">
+            <div class="container-fluid book-table-content">
+                <div class="row justify-content-center align-items-center g-4">
+                    <!-- Text -->
+                    <div class="col-md-6 col-lg-6">
+                        <div class="book-table-text">
+                            <div class="main-title">
+                                <span class="text-capitalize">Book A Table</span>
+                                <h1 class="text-capitalize">Experience fine dining</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, voluptate!</p>
+                                <div class="meals-time d-flex justify-content-center align-items-stretch flex-wrap gap-2">
+                                    <div class="meal p-3 rounded-3">
+                                        <h5 class="text-capitalize">Breakfast Time</h5>
+                                        <p>
+                                            <b>Monday-Saturday :</b> 8:00am → 11:00am <br>
+                                            <b>Sunday :</b> Closed
+                                        </p>
+                                    </div>
+
+                                    <div class="meal p-3 rounded-3 big-meal">
+                                        <h5 class="text-capitalize">Lunch Time</h5>
+                                        <p>
+                                            <b>Monday-Saturday :</b> 12:00am → 4:00pm <br>
+                                            <b>Sunday :</b> Closed
+                                        </p>
+                                    </div>
+
+                                    <div class="meal p-3 rounded-3">
+                                        <h5 class="text-capitalize">Dinner Time</h5>
+                                        <p>
+                                            <b>Monday-Saturday :</b> 7:00pm → 12:00pm <br>
+                                            <b>Sunday :</b> Closed
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- call us -->
+                                <a href="tel:+21274455667788" class="call-us mt-3 text-decoration-none rounded-3 d-flex align-items-center gap-2 py-3 px-4 w-100">
+                                    <div class="icon d-flex justify-content-center align-items-center">
+                                        <i class="fa-solid fa-headset fs-4"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p class="fw-bold text-uppercase">Hotline 24/7</p>
+                                        <h6 class="fw-bold">
+                                            +212 7 44 55 66 77 88
+                                        </h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form -->
+                    <div class="col-md-6 col-lg-6">
+                        <form action="" class="booking-form row py-5 px-4 rounded-5 bg-white text-dark mx-auto" style="max-width: 600px;">
+                            <div class="col-12 form-group mb-4">
+                                <label for="fullName" class="text-uppercase fw-bold opacity-75 form-label">
+                                    Full Name
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="text" name="fullName" id="fullName" class="form-input" placeholder="john doe">
+                                    <i class="fa-solid fa-user input-icon"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 form-group mb-4">
+                                <label for="email" class="text-uppercase fw-bold opacity-75 form-label">
+                                    Phone
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="phone" name="phone" id="phone" class="form-input" placeholder="06 55 88 99 10 45">
+                                    <i class="fa-solid fa-phone input-icon"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 form-group mb-4">
+                                <label for="guests" class="text-uppercase fw-bold opacity-75 form-label">
+                                    Guests
+                                </label>
+                                <div class="select-wrapper">
+                                    <select name="guests" id="guests" class="form-select">
+                                        <option value="1">
+                                            1 Person
+                                        </option>
+                                        <option value="2">
+                                            2 People
+                                        </option>
+                                        <option value="3">
+                                            3 People
+                                        </option>
+                                        <option value="4">
+                                            4 People
+                                        </option>
+                                        <option value="5">
+                                            5 People
+                                        </option>
+                                        <option value="6">
+                                            6 People
+                                        </option>
+                                    </select>
+                                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 form-group mb-4">
+                                <label for="date" class="text-uppercase fw-bold opacity-75 form-label">
+                                    Date
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="date" name="date" id="date" class="form-input date-input">
+                                    <i class="fa-solid fa-calendar input-icon"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 form-group mb-4">
+                                <label for="time" class="text-uppercase fw-bold opacity-75 form-label">
+                                    Time
+                                </label>
+                                <div class="select-wrapper">
+                                    <select name="time" id="time" class="form-select">
+                                        <option value="breakfast">
+                                            Breakfast
+                                        </option>
+                                        <option value="lunch">
+                                            Lunch
+                                        </option>
+                                        <option value="dinner">
+                                            Dinner
+                                        </option>
+                                    </select>
+                                    <i class="fa-solid fa-chevron-down select-arrow"></i>
+                                </div>
+                            </div>
+                            <!-- btn confirm -->
+                            <div class="col-12 confirm-booking-table text-center mt-4">
+                                <button type="submit" class="submit-btn">
+                                    <span>Confirm Booking</span>
+                                    <i class="fa-solid fa-arrow-right btn-icon"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /end Book Table -->
+
     </div>
 
     <!-- Bootstrap Js -->
@@ -644,5 +786,7 @@
     <script src="js/switchHeroImages.js"></script>
     <!-- filterGallery -->
     <script src="js/filterGallery.js"></script>
+    <!-- BookTable -->
+    <script src="js/bookTable.js"></script>
 </body>
 </html>
