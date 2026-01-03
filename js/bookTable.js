@@ -79,20 +79,20 @@ document.addEventListener('DOMContentLoaded', function() {
         // Format the message
         const message = `📋 *NEW TABLE RESERVATION* 📋
         
-👤 *Customer Details:*
-• Name: ${fullName}
-• Phone: ${phone}
+            👤 *Customer Details:*
+            • Name: ${fullName}
+            • Phone: ${phone}
 
-🪑 *Reservation Details:*
-• Guests: ${guests} ${guests === '1' ? 'Person' : 'People'}
-• Date: ${formattedDate}
-• Time: ${time.charAt(0).toUpperCase() + time.slice(1)}
+            🪑 *Reservation Details:*
+            • Guests: ${guests} ${guests === '1' ? 'Person' : 'People'}
+            • Date: ${formattedDate}
+            • Time: ${time.charAt(0).toUpperCase() + time.slice(1)}
 
-⏰ *Submitted:* ${new Date().toLocaleString()}`;
+            ⏰ *Submitted:* ${new Date().toLocaleString()}`;
         
         // Encode the message for URL
         const encodedMessage = encodeURIComponent(message);
-        const whatsappNumber = '0633908104';
+        const whatsappNumber = '+212633908104';
         
         // Create WhatsApp URL
         const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
