@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>Dineo – Best Restaurant in Morocco | Fine Dining Experience</title>
+    <meta name="description"
+        content="Dineo is a modern restaurant in Morocco offering gourmet dishes, fresh ingredients, and an exceptional fine dining experience.">
+    <meta name="keywords"
+        content="restaurant in Morocco, best restaurant Morocco, fine dining Morocco, gourmet food, Dineo restaurant">
+    <meta name="author" content="Dineo Restaurant">
+
+    <!-- Open Graph (Social SEO) -->
+    <meta property="og:title" content="Dineo – Best Restaurant in Morocco">
+    <meta property="og:description"
+        content="Discover Dineo, a modern restaurant in Morocco serving gourmet dishes with fresh ingredients.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mouhamed-talibi.github.io/Dineo/">
+    <meta property="og:image" content="https://mouhamed-talibi.github.io/Dineo/imgs/Dineo1.webp">
+
+    <!-- Preconnect for faster CDN -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+    <!-- Preload Critical Fonts -->
+    <link rel="preload"
+        href="fonts/DidactGothic-Regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin>
+
+    <link rel="preload"
+        href="fonts/Playfair_144pt-Regular.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin>
+
+    <link rel="preload"
+        href="fonts/Playfair_144pt-Bold.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin>
+
+    <!-- Bootstrap CSS (Render Blocking but acceptable) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- AOS CSS (non-critical) -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Main CSS (Defer loading) -->
+    <link rel="preload"
+        href="css/main.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/main.css">
+    </noscript>
+
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg custom-navbar shadow sticky-top">
+            <div class="container-fluid">
+
+                <!-- BRAND -->
+                <div class="navbar-brand d-flex justify-content-center align-items-center">
+                    <div class="brand-icon d-flex justify-content-center align-items-center me-2">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <p class="text-uppercase">Dineo</p>
+                </div>
+
+                <!-- HAMBURGER / TOGGLER (Mobile) -->
+                <button class="navbar-toggler custom-toggler" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <!-- DESKTOP LINKS -->
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                    <ul class="navbar-nav align-items-center gap-2">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#contact">Reservation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase activated" href="#bookTable">Book A Table</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 🔵 OFFCANVAS MENU (Mobile + Tablet) -->
+        <div class="offcanvas offcanvas-start mobile-menu" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <button class="btn-close float-right" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-start gap-3">
+                    <li><a class="nav-link" href="" data-bs-dismiss="offcanvas">Home</a></li>
+                    <li><a class="nav-link" href="#about" data-bs-dismiss="offcanvas">About</a></li>
+                    <li><a class="nav-link" href="#services" data-bs-dismiss="offcanvas">Services</a></li>
+                    <li><a class="nav-link" href="menu.html" data-bs-dismiss="offcanvas">Menu</a></li>
+                    <li><a class="nav-link" href="#gallery" data-bs-dismiss="offcanvas">Gallery</a></li>
+                    <li><a class="nav-link" href="#contact" data-bs-dismiss="offcanvas">Reservation</a></li>
+                    <li><a class="nav-link activated" href="#bookTable" data-bs-dismiss="offcanvas">Book A Table</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="footer py-5">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <!-- Brand Info Column -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="brand-info pe-lg-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="brand-icon me-3">
+                                    <i class="fa-solid fa-utensils fa-2x"></i>
+                                </div>
+                                <h2 class="brand-title text-uppercase mb-0">Dineo</h2>
+                            </div>
+                            <p class="brand-description mb-4">
+                                Experience exquisite Moroccan cuisine in an elegant setting with authentic flavors and warm hospitality.
+                            </p>
+                            <div class="social-links d-flex gap-3">
+                                <a href="https://wa.me/21262233445577" target="_blank" class="social-link whatsapp rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="https://facebook.com" target="_blank" class="social-link facebook rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" class="social-link instagram rounded-circle d-flex align-items-center justify-content-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Column -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="quick-links-section">
+                            <h3 class="footer-title mb-4">Quick Links</h3>
+                            <ul class="list-unstyled quick-links">
+                                <li class="mb-3">
+                                    <a href="index.html" class="footer-link d-flex align-items-center">
+                                        <i class="fa-solid fa-chevron-right me-2"></i>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="index.html#gallery" class="footer-link d-flex align-items-center">
+                                        <i class="fa-solid fa-chevron-right me-2"></i>
+                                        <span>Gallery</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#about" class="footer-link d-flex align-items-center">
+                                        <i class="fa-solid fa-chevron-right me-2"></i>
+                                        <span>About Us</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="index.html#bookTable" class="footer-link d-flex align-items-center">
+                                        <i class="fa-solid fa-chevron-right me-2"></i>
+                                        <span>Book Table</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="index.html#contact" class="footer-link d-flex align-items-center">
+                                        <i class="fa-solid fa-chevron-right me-2"></i>
+                                        <span>Contact</span>
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="" class="footer-link d-flex align-items-center">
+                                        <i class="fa-solid fa-chevron-right me-2"></i>
+                                        <span>Menu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours Column -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="opening-hours-section">
+                            <h3 class="footer-title mb-4">Opening Hours</h3>
+                            <div class="hours-list mb-4">
+                                <div class="hours-item d-flex justify-content-between mb-3 pb-3 border-bottom border-secondary border-opacity-25">
+                                    <span class="days fw-medium">Monday - Saturday</span>
+                                    <span class="hours text-primary-green">8:00 PM - 12:00 AM</span>
+                                </div>
+                                <div class="hours-item d-flex justify-content-between mb-3 pb-3">
+                                    <span class="days fw-medium">Sunday</span>
+                                    <span class="hours text-danger">Closed</span>
+                                </div>
+                            </div>
+                            <div class="reservation-note d-flex align-items-center bg-dark bg-opacity-25 p-3 rounded">
+                                <i class="fa-solid fa-clock text-primary-green me-3"></i>
+                                <span>Reservations are recommended for best experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+        crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 700,
+            disable: window.innerWidth < 480
+        });
+    </script>
+    <!-- Loader -->
+    <script src="js/loader.js"></script>
+    <!-- Nav -->
+    <script src="js/nav.js"></script>
+</body>
+</html>
