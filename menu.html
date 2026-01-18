@@ -63,11 +63,11 @@
 
     <!-- Main CSS (Defer loading) -->
     <link rel="preload"
-        href="css/main.css"
+        href="css/menu.css"
         as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
     </noscript>
 
     <!-- Favicon -->
@@ -108,25 +108,25 @@
                     <ul class="navbar-nav align-items-center gap-2">
 
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="">Home</a>
+                            <a class="nav-link text-uppercase" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#about">About</a>
+                            <a class="nav-link text-uppercase" href="index.html#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#services">Services</a>
+                            <a class="nav-link text-uppercase" href="index.html#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="menu.html">Menu</a>
+                            <a class="nav-link text-uppercase" href="">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#gallery">Gallery</a>
+                            <a class="nav-link text-uppercase" href="index.html#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="#contact">Reservation</a>
+                            <a class="nav-link text-uppercase" href="index.html#contact">Reservation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase activated" href="#bookTable">Book A Table</a>
+                            <a class="nav-link text-uppercase activated" href="index.html#bookTable">Book A Table</a>
                         </li>
                     </ul>
                 </div>
@@ -151,6 +151,329 @@
             </div>
         </div>
 
+        <!-- Menu content -->
+            <!-- Menu title -->
+            <div class="menu-title d-flex flex-column justify-content-center align-items-center">
+                <div class="text text-center">
+                    <h1>
+                        Taste the Extraordinary
+                    </h1>
+                    <p class="mt-3">
+                        <span class="d-block mb-2">Where every ingredient tells a story and every bite is a revelation.</span>
+                        Our chef's seasonal menu celebrates local producers while taking your palate on an unforgettable journey.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Menu items -->
+            <div class="menu-items container-fluid mt-5 mb-5">
+                <!-- menu filter -->
+                <div class="menu-filter d-flex justify-content-center gap-3 flex-wrap">
+                    <button class="filter-btn py-2 px-3 active" data-filter="all">
+                        <i class="fa-solid fa-border-all"></i>
+                        All
+                    </button>
+                    <button class="filter-btn py-2 px-3"
+                            data-filter="drinks">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        Drinks
+                    </button>
+                    <button class="filter-btn py-2 px-3"
+                            data-filter="salads">
+                        <i class="fa-solid fa-seedling"></i>
+                        Salads
+                    </button>
+                    <button class="filter-btn py-2 px-3"
+                            data-filter="sweets">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        Sweets
+                    </button>
+                    <button class="filter-btn py-2 px-3"
+                            data-filter="pizza">
+                        <i class="fa-solid fa-pizza-slice"></i>
+                        Pizza
+                    </button>
+                </div>
+
+                <div class="row justify-content-center align-items-center g-3 mt-4">
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="drinks">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/drinks/Espresso.webp" loading="lazy" alt="Espresso" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Espresso</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(23)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">12 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="sweets">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/sweets/ChocolateBar.webp" loading="lazy" alt="Chocolate Bar" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Chocolate Bar</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(15)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">8 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="pizza">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/pizza/CheesePizza.webp" loading="lazy" alt="Cheese Pizza" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Cheese Pizza</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(33)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">32 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="salads">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/salads/CaesarSalad.webp" loading="lazy" alt="Caesar Salad" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Caesar Salad</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(33)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">28 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="drinks">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/drinks/OrangeJuice.webp" loading="lazy" alt="Orange Juice" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Orange Juice</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(10)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">15 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="salads">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/salads/FruitSalad.webp" loading="lazy" alt="Fruit Salad" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Fruit Salad</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(29)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">33 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="pizza">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/pizza/MargaritaPizza.webp" loading="lazy" alt="Margarita Pizza" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Margarita Pizza</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(10)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">45 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="sweets">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/sweets/Cupcake.webp" loading="lazy" alt="Cupcake" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Cupcake</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(25)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">12 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="drinks">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/drinks/StrawberryJuice.webp" loading="lazy" alt="Strawberry Juice" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Strawberry Juice</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(28)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">18 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="sweets">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/sweets/GummyCandies.webp" loading="lazy" alt="Gummy Candies" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Gummy Candies</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(10)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">12 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="pizza">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/pizza/PepperoniPizza.webp" loading="lazy" alt="Pepperoni Pizza" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Pepperoni Pizza</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(10)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">39 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items here -->
+                    <div class="col-lg-4 col-md-6 col-6 mb-3 menu-item" data-category="salads">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="imgs/salads/greekSalad.webp" loading="lazy" alt="Greek Salad" class="img-fluid">
+                            </div>
+                            <div class="item-details p-3">
+                                <h3>Greek Salad</h3>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-muted">(10)</span>
+                                </div>
+
+                                <p class="item-description d-none d-md-block">Made with freshly squeezed lemons, pure cane sugar, and filtered water. A refreshing summer classic.</p>
+                                <div class="item-price">27 Mad</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         <!-- Footer -->
@@ -271,5 +594,7 @@
     <script src="js/loader.js"></script>
     <!-- Nav -->
     <script src="js/nav.js"></script>
+    <!-- Nav -->
+    <script src="js/filterMenu.js"></script>
 </body>
 </html>
